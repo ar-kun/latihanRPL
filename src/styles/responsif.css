@@ -1,0 +1,142 @@
+@media screen and (min-width: 768px) {
+ nav {
+  font-size: 1.25em;
+  padding: 0 25px;
+ }
+ .menu .brand img {
+  margin: 0 25px 0 0;
+  width: 20%;
+ }
+ nav ul {
+  display: flex;
+  position: unset;
+  top: 0;
+  right: unset;
+  height: unset;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  flex-direction: row;
+  background-color: unset;
+  z-index: unset;
+  transform: none;
+  transition: none;
+  opacity: 1;
+ }
+ nav .nav_list a {
+
+ padding: 15px 0;
+}
+ .menu-toggle {
+  display: none;
+ }
+ .hero_element {
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+  font-size: 1.1em;
+  background-image: linear-gradient(180deg, rgba(2, 0, 36, 0.5) 0%, rgba(0, 212, 255, 0.5) 100%), url(../public/images/heros/hero-image_1-large.jpg);
+  background-size: cover;
+ }
+ .product,
+ .gallery {
+  font-size: 1.5em;
+  margin: 50px 25px;
+ }
+ .product_list,
+ .galery_list {
+  grid-template-columns: 1fr 1fr;
+ }
+ .product_detail{
+  margin-top: 80px;
+ }
+ .product_list .product_item .product_content .product_head {
+  font-size: 1em;
+ }
+ .product_list .product_item .product_content .product_desk {
+  font-size: 1em;
+ }
+ /* Detail */
+ .product_detail .spek_detail aside p:first-child{
+  font-size: 1.75em;
+}
+.product_detail h4{
+  font-size: 1.75em;
+}
+.product_detail .menu_review .food_list, .product_detail .menu_review .drink_list, .product_detail .menu_review .list_review{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+ footer {
+  display: grid;
+  grid-template-areas: 'desk contact' 'copy copy';
+  font-size: 1.2em;
+  gap: 25px;
+  padding: 20px 25px;
+ }
+ footer .foot_desk {
+  grid-area: desk;
+ }
+ footer .foot_contact {
+  grid-area: contact;
+ }
+ footer .copy {
+  grid-area: copy;
+ }
+}
+
+@media screen and (min-width: 992px) {
+ nav ul {
+  gap: 50px;
+ }
+ .hero_element {
+  padding: 0 250px;
+  height: 100vh;
+  font-size: 1.1em;
+  background-image: linear-gradient(180deg, rgba(2, 0, 36, 0.5) 0%, rgba(0, 212, 255, 0.5) 100%), url(../public/images/heros/hero-image_1-large.jpg);
+  background-size: cover;
+ }
+ .product,
+ .gallery {
+  margin: 50px 50px;
+ }
+ .product_list,
+ .galery_list {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+ }
+ .product_like{
+  grid-template-columns: 1fr 1fr 1fr;
+ }
+ /* Detail */
+ .product_detail .spek_detail aside{
+  background-color: #07beb880;
+  position: absolute;
+  text-align: justify;
+  padding: 25px;
+  bottom: 0;
+}
+.product_detail .spek_detail aside p:nth-child(1){
+  font-size: 1.25em;
+}
+.product_detail .spek_detail aside p:nth-child(2), .product_detail .spek_detail aside p:nth-child(3){
+  font-size: .8em;
+}
+.product_detail .spek_detail aside p:nth-child(4){
+  font-size: 1em;
+}
+.product_detail .menu_review {
+  gap: 50px;
+}
+.product_detail .menu_review .food_list, .product_detail .menu_review .drink_list, .product_detail .menu_review .list_review{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+
+@media screen and (min-width: 1400px) {
+  .product_detail .menu_review .food_list, .product_detail .menu_review .drink_list, .product_detail .menu_review .list_review{
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+}
